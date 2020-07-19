@@ -1,12 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext } from 'react';
+import HeaderNavbar from './Component/HeaderNavbar'
+import CardRapper from "./Component/CardRapper"
+import {MovieContaxt} from './Record/MovieRcord'
+
 
 function App() {
   return (
+
+  <MovieContaxt>
     <div className="App">
-        <h1>Mk1319</h1>
+      <HeaderNavbar/>
+      <CardRapper/>
     </div>
+  </MovieContaxt>
   );
 }
 
