@@ -6,16 +6,12 @@ import React,{useState, useEffect, createContext} from 'react'
 
 export const ContextMovie=createContext()
 
-// export const loadmore=createContext()
-
 
 export const MovieContaxt=props=>{
 
   const [Moviedata,setMoviedata]=useState([])
   const [load,setload]=useState(1)
   
-
-
 
   useEffect(()=>{
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=81a5499013451ffd894029835478e7b1&language=en-US&sort_by=popularity.desc&page=${load}`)
@@ -28,7 +24,7 @@ export const MovieContaxt=props=>{
 
 
     
-  return(
+return(
     <ContextMovie.Provider value={[[Moviedata,setMoviedata],[load,setload]]}>
       {props.children}    
     </ContextMovie.Provider>
