@@ -2,7 +2,7 @@
   "name": "movierating",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mk1319.github.io/React_Movie_Rating-List/",
+  "homepage": " https://mk1319.github.io/React_Movie_Rating-List/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
